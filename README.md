@@ -15,12 +15,38 @@ Cada dia possui sua própria pasta, nomeada como `day-1`, `day-2`, etc. Dentro d
 - `solution.test.ts` contendo testes unitários para a solução.
 - `input.txt` fornecido pelo Advent of Code.
 
-## Executando as Soluções
+## Executando as Soluções com Bun.js
 
 Para executar as soluções, você precisará ter o [Bun.js](https://bun.sh/) instalado.
 
 ```bash
 bun run main.ts
+```
+
+## Executando os Testes com Bun.js
+
+Para executar as soluções, você precisará ter o [Bun.js](https://bun.sh/) instalado.
+
+```bash
+bun test
+```
+
+## Executando as Soluções com Docker
+
+Para executar as soluções com Docker, você precisará ter o [Docker](https://www.docker.com/) instalado.
+
+```bash
+docker build . -t advent-of-code-2023
+docker run --rm -it advent-of-code-2023
+```
+
+## Executando os Testes com Docker
+
+Para executar as soluções com Docker, você precisará ter o [Docker](https://www.docker.com/) instalado.
+
+```bash
+docker build . -t advent-of-code-2023
+docker run --rm -it advent-of-code-2023 bun test
 ```
 
 ## Contribuições
