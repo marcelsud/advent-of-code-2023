@@ -26,3 +26,5 @@ The _power_ of a set of cubes is equal to the numbers of red, green, and blue cu
 
 For each game, find the minimum set of cubes that must have been present.
 _What is the sum of the power of these sets?_
+
+Your puzzle answer was `69110`.

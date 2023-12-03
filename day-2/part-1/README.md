@@ -29,3 +29,5 @@ The Elf would first like to know which games would have been possible if the bag
 In the example above, games 1, 2, and 5 would have been _possible_ if the bag had been loaded with that configuration. However, game 3 would have been _impossible_ because at one point the Elf showed you 20 red cubes at once; similarly, game 4 would also have been _impossible_ because the Elf showed you 15 blue cubes at once. If you add up the IDs of the games that would have been possible, you get _`8`_.
 
 Determine which games would have been possible if the bag had been loaded with only 12 red cubes, 13 green cubes, and 14 blue cubes. _What is the sum of the IDs of those games?_
+
+Your puzzle answer was `2810`.

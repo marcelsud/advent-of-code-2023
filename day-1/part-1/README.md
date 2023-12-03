@@ -26,3 +26,5 @@ treb7uchet
 In this example, the calibration values of these four lines are `12`, `38`, `15`, and `77`. Adding these together produces _`142`_.
 
 Consider your entire calibration document. _What is the sum of all of the calibration values?_
+
+Your puzzle answer was `54597`.

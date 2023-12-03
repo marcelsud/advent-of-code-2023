@@ -32,3 +32,5 @@ Here is an example engine schematic:
 In this schematic, two numbers are _not_ part numbers because they are not adjacent to a symbol: `114` (top right) and `58` (middle right). Every other number is adjacent to a symbol and so _is_ a part number; their sum is _`4361`_.
 
 Of course, the actual engine schematic is much larger. _What is the sum of all of the part numbers in the engine schematic?_
+
+Your puzzle answer was `559667`.
