@@ -1,18 +1,9 @@
 import { test, expect } from "bun:test";
 import { solution } from "./solution";
 
-const input = `467..114..
-...*......
-..35..633.
-......#...
-617*......
-.....+.58.
-..592.....
-......755.
-...$.*....
-.664.598..`;
+const sample = await Bun.file("./day-3/part-2/sample").text();
 
 test("adding up all of the gear ratios produces 467835", () => {
-  const total = solution(input);
+  const total = solution(sample);
   expect(total).toBe(467835);
 });

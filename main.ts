@@ -12,34 +12,34 @@ import { solution as day6part1 } from "./day-6/part-1/solution";
 import { solution as day6part2 } from "./day-6/part-2/solution";
 
 console.log("Day 1, part 1:");
-await run("./day-1/part-1/input.txt", day1part1);
+await run("./day-1/part-1/input", day1part1);
 
 console.log("Day 1, part 2:");
-await run("./day-1/part-1/input.txt", day1part2);
+await run("./day-1/part-1/input", day1part2);
 
 console.log("Day 2, part 1:");
-await run("./day-2/part-1/input.txt", day2part1);
+await run("./day-2/part-1/input", day2part1);
 
 console.log("Day 2, part 2:");
-await run("./day-2/part-2/input.txt", day2part2);
+await run("./day-2/part-2/input", day2part2);
 
 console.log("Day 3, part 1:");
-await run("./day-3/part-1/input.txt", day3part1);
+await run("./day-3/part-1/input", day3part1);
 
 console.log("Day 3, part 2:");
-await run("./day-3/part-2/input.txt", day3part2);
+await run("./day-3/part-2/input", day3part2);
 
 console.log("Day 4, part 1:");
-await run("./day-4/part-1/input.txt", day4part1);
+await run("./day-4/part-1/input", day4part1);
 
 console.log("Day 4, part 2:");
-await run("./day-4/part-2/input.txt", day4part2);
+await run("./day-4/part-2/input", day4part2);
 
 console.log("Day 5, part 1:");
-await run("./day-5/part-1/input.txt", day5part1);
+await run("./day-5/part-1/input", day5part1);
 
 console.log("Day 5, part 2:");
-// await run("./day-5/part-2/input.txt", day5part2);
+// await run("./day-5/part-2/input", day5part2);
 // It runs in 30 minutes, so I'm just going to hardcode the answer here. 😅
 console.log(`Answer: 100165128 ✔️`);
 

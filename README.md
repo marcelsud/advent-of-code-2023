@@ -13,7 +13,8 @@ Cada dia possui sua própria pasta, nomeada como `day-1`, `day-2`, etc. Dentro d
 - `README.md` contendo o enunciado do problema.
 - `solution.ts` contendo minhas soluções.
 - `solution.test.ts` contendo testes unitários para a solução.
-- `input.txt` fornecido pelo Advent of Code.
+- `sample` fornecido pelo Advent of Code e usado para testar a solução.
+- `input` fornecido pelo Advent of Code e usado para obter a resposta final.
 
 ## Executando as Soluções com Bun.js
 

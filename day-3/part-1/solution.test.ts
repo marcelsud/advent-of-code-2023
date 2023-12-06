@@ -7,18 +7,8 @@ import {
   solution,
 } from "./solution";
 
-const lines = [
-  "467..114..",
-  "...*......",
-  "..35..633.",
-  "......#...",
-  "617*......",
-  ".....+.58.",
-  "..592.....",
-  "......755.",
-  "...$.*....",
-  ".664.598..",
-];
+const sample = await Bun.file("./day-3/part-1/sample").text();
+const lines = sample.split("\n");
 
 test("the sum of the part numbers is 4361", () => {
   const numbers = findNumbers(lines, PART_NUMBER);
@@ -31,7 +21,7 @@ test("the sum of the non part numbers is 172", () => {
 });
 
 test("the sum of the part numbers is 4361 based on the input", () => {
-  const total = solution(lines.join("\n"));
+  const total = solution(sample);
   expect(total).toBe(4361);
 });
 

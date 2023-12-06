@@ -1,13 +1,7 @@
 import { expect, test } from "bun:test";
 import { solution, convert } from "./solution";
 
-const input = `two1nine
-eightwothree
-abcone2threexyz
-xtwone3four
-4nineeightseven2
-zoneight234
-7pqrstsixteen`;
+const sample = await Bun.file("./day-1/part-2/sample").text();
 
 test("it should convert each line correctly", () => {
   expect(convert("two1nine")).toBe(29);
@@ -20,5 +14,5 @@ test("it should convert each line correctly", () => {
 });
 
 test("adding these together produces 281", () => {
-  expect(solution(input)).toBe(281);
+  expect(solution(sample)).toBe(281);
 });

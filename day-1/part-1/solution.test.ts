@@ -1,11 +1,7 @@
 import { expect, test } from "bun:test";
 import { solution } from "./solution";
 
-const input = `1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet`;
-
-test("adding these together produces 142", () => {
-  expect(solution(input)).toEqual(142);
+test("adding these together produces 142", async () => {
+  const sample = await Bun.file("./day-1/part-1/sample").text();
+  expect(solution(sample)).toEqual(142);
 });
