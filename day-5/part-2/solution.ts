@@ -1,10 +1,5 @@
 type Almanac = {
-  [key: string]: {
-    source: string;
-    destination: string;
-    ranges: [number, number, number][];
-    map: Record<number, number>;
-  };
+  [key: string]: [number, number, number][];
 };
 
 function* generateRange(start: number, end: number, step = 1) {
@@ -48,21 +43,14 @@ export function parseAlmanac(lines: string[]) {
   for (const line of lines.slice(2)) {
     if (line.includes("map")) {
       const type = line.split(" ")[0];
-      const source = type.split("-to-")[0];
-      const destination = type.split("-to-")[1];
-      almanac[type] = {
-        source,
-        destination,
-        ranges: [],
-        map: {},
-      };
+      almanac[type] = [];
       currentType = type;
       continue;
     }
     if (line === "") {
       continue;
     }
-    almanac[currentType!].ranges.push(
+    almanac[currentType!].push(
       line.split(" ").map(Number) as [number, number, number]
     );
   }
@@ -74,7 +62,7 @@ export function getRangeFor(
   type: string,
   value: number
 ): [number, number, number] | undefined {
-  return almanac[type].ranges.find(
+  return almanac[type].find(
     ([_, start, length]) => value >= start && value <= start + length - 1
   );
 }
