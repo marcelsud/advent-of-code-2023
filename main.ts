@@ -12,6 +12,8 @@ import { solution as day6part1 } from "./day-6/part-1/solution";
 import { solution as day6part2 } from "./day-6/part-2/solution";
 import { solution as day7part1 } from "./day-7/part-1/solution";
 import { solution as day7part2 } from "./day-7/part-2/solution";
+import { solution as day8part1 } from "./day-8/part-1/solution";
+import { solution as day8part2 } from "./day-8/part-2/solution";
 
 console.log("Day 1, part 1:");
 await run("./day-1/part-1/input", day1part1);
@@ -56,6 +58,12 @@ await run("./day-7/part-1/input", day7part1);
 
 console.log("Day 7, part 2:");
 await run("./day-7/part-2/input", day7part2);
+
+console.log("Day 8, part 1:");
+await run("./day-8/part-1/input", day8part1);
+
+console.log("Day 8, part 2:");
+await run("./day-8/part-2/input", day8part2);
 
 export async function run(inputPath: string, solution: (input: string) => any) {
   const input = await Bun.file(inputPath).text();
